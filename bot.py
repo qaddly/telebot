@@ -31,4 +31,4 @@ def send_welcome(message):
 
 if __name__ == "__main__":
     threading.Thread(target=run_health_server, daemon=True).start()
-    bot.infinity_polling()
+    bot.infinity_polling(timeout=3600)
